@@ -1,0 +1,56 @@
+<footer>
+    <div class="footer-nav">
+        <div class="container">
+            <ul class="about-ul list-inline clearfix">
+                <li><a href="$base/tag/%E4%B8%9A%E7%95%8C/">业界</a></li>
+                <li><a href="$base/tag/%E4%BA%B2%E5%AD%90/">亲子</a></li>
+                <li><a href="$base/tag/段子/" nav="home">段子</a></li>
+                <li><a href="$base/tag/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/">程序人生</a></li>
+                <li><a href="$base/tag/%E6%8A%80%E6%9C%AF/">技术</a></li>
+                <li><a href="$base/tag/Html5/" nav="home">Html5</a></li>
+                <li><a href="$base/tag/%E6%9E%B6%E6%9E%84/">架构</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-nav">
+        <div class="container">
+            <ul class="about-ul list-inline clearfix">
+                <li><a href="$base/about">关于我们</a></li>
+                <li><a href="$base/joinus">联系我们</a></li>
+                <li><a href="$base/faqs">常见问题</a></li>
+                <li>
+                    <script>
+                        var _hmt = _hmt || [];
+                        (function() {
+                            var hm = document.createElement("script");
+                            hm.src = "//hm.baidu.com/hm.js?c995f040ee31f5afcf784c6a5ca2b7f6";
+                            var s = document.getElementsByTagName("script")[0];
+                            s.parentNode.insertBefore(hm, s);
+                        })();
+                    </script>
+                </li>
+            </ul>
+        </div>
+    </div>
+	<div class="container mode-link">
+        <h3 class="t-h3">友情链接</h3>
+        <ul class="list-inline">
+			#foreach($link in $friendLinks)
+                <li>
+                    <a href="${link.url}" target="_blank" title="${link.remark}">${link.siteName}</a>
+                </li>
+			#end
+        </ul>
+    </div>
+	<div class="container copy-right">
+        <span>$!{site_copyright} </span>
+		<span>
+		<a href="http://www.miitbeian.gov.cn/" target="_blank">&nbsp;&nbsp;<img src="http://www.haowuyun.com/pics/beian.png"
+                                                                                style="width: 18px;height: 18px"/>&nbsp;&nbsp;$!{site_icp}</a>
+		</span>
+		<span><a href="http://www.12377.cn/" target="_blank">&nbsp;&nbsp;<img src="http://www.haowuyun.com/pics/jubao2.png"
+                                                                              style="width: 19px;height: 18px"/>&nbsp;&nbsp;中国互联网举报中心</a>
+		</span>
+	</div>
+
+</footer>
