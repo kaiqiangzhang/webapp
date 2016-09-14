@@ -21,7 +21,6 @@ $!{site_metas}
 
 <script type="text/javascript" src="$base/assets/js/sea.js"></script>
 <script type="text/javascript" src="$base/assets/js/sea.config.js"></script>
-<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- Favicons -->
 <link rel="apple-touch-icon-precomposed" href="$base/assets/images/haowuicon.png"/>

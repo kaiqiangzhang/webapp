@@ -12,7 +12,6 @@
     <title>$!{title} - $!{site_name}</title>
 	<meta name="keywords" content="LoveInLog,$!{tags}"/>
 	<meta name="description" content="$!{summary}"/>
-    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 	#parse("/default/inc/params.vm")
 </head>
 <body>
