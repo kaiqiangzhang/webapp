@@ -36,3 +36,4 @@ $!{site_metas}
 	
 	window.UEDITOR_HOME_URL = '$base/assets/vendors/ueditor/';
 </script>
+

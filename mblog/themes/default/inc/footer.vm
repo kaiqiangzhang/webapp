@@ -2,13 +2,13 @@
     <div class="footer-nav">
         <div class="container">
             <ul class="about-ul list-inline clearfix">
-                <li><a href="$base/tag/%E4%B8%9A%E7%95%8C/">业界</a></li>
-                <li><a href="$base/tag/%E4%BA%B2%E5%AD%90/">亲子</a></li>
-                <li><a href="$base/tag/段子/" nav="home">段子</a></li>
-                <li><a href="$base/tag/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/">程序人生</a></li>
-                <li><a href="$base/tag/%E6%8A%80%E6%9C%AF/">技术</a></li>
-                <li><a href="$base/tag/Html5/" nav="home">Html5</a></li>
-                <li><a href="$base/tag/%E6%9E%B6%E6%9E%84/">架构</a></li>
+                <li><a href="$base/tag/摄影/">摄影</a></li>
+                <li><a href="$base/tag/内涵/">内涵段子</a></li>
+                <li><a href="$base/tag/八卦/">八卦</a></li>
+                <li><a href="$base/tag/导购/">导购</a></li>
+                <li><a href="$base/tag/视界/">视界</a></li>
+                <li><a href="$base/tag/军事/">军事</a></li>
+                <li><a href="$base/tag/情感/">情感</a></li>
             </ul>
         </div>
     </div>
@@ -41,5 +41,5 @@
                                                                               style="width: 19px;height: 18px"/>&nbsp;&nbsp;中国互联网举报中心</a>
 		</span>
 	</div>
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260309756'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260309756%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
 </footer>
