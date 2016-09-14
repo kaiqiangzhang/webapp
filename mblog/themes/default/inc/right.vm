@@ -60,6 +60,14 @@
         <li class="text-center">&nbsp;</li>
     </ul>
 </div>
+<div class="widget-box shadow-box">
+    <div class="title">
+        <h3><i class="fa fa-star"></i> 关注新浪官方微博</h3>
+    </div>
+    <ul class="box-list" id="app">
+        <wb:follow-button uid="2991975565" type="red_1" width="67" height="24" ></wb:follow-button>
+    </ul>
+</div>
 
 
 <script type="text/javascript">
