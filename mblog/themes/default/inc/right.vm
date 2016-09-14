@@ -46,7 +46,7 @@
 </div>
 <div class="widget-box shadow-box">
     <div class="title">
-        <h3><i class="fa fa-coffee"></i> 好文章,关注公众号</h3>
+        <h3><i class="fa fa-coffee"></i> 看好文章,关注公众号</h3>
     </div>
     <img src="http://www.haowuyun.com/pics/qrcode_for_gh_weixin_gognzhonghao_12cm.jpg" style="width:238px;height: 238px"  />
 </div>
@@ -64,9 +64,8 @@
     <div class="title">
         <h3><i class="fa fa-star"></i> 关注新浪官方微博</h3>
     </div>
-    <ul class="box-list" id="app">
-        <wb:follow-button uid="2991975565" type="red_1" width="67" height="24" ></wb:follow-button>
-    </ul>
+			<wb:bulkfollow uids="5533072738" type="1" width="100%" height="240" count="5" color="C2D9F2,FFFFFF,0082CB,666666" ></wb:bulkfollow>
+        <wb:follow-button uid="5533072738" type="red_4" width="100%" height="80" ></wb:follow-button>
 </div>
 
 
