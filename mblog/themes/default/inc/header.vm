@@ -39,96 +39,115 @@
 <!-- Header BEGIN -->
 <div class="top-wrap">
     <nav class="navbar navbar-inverse" role="navigation">
-    	#parse("/default/inc/browse_tips.vm")
-    	<div class="container">
-    		<div class="navbar-header">
-    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-    				<span class="sr-only">Toggle navigation</span>
-    				<span class="icon-bar"></span>
-    				<span class="icon-bar"></span>
-    				<span class="icon-bar"></span>
-    			</button>
-    			<a class="navbar-brand logo" href="$base/index"><img src="$base/assets/images/haowuicon.png"></a>
+		#parse("/default/inc/browse_tips.vm")
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="$base/index"><img src="$base/assets/images/haowuicon.png"></a>
                 <a class="navbar-brand" href="$base/index">LoveInLog</a>
-    		</div>
-    		<div id="navbar" class="navbar-collapse collapse">
-    			<ul class="nav navbar-nav">
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
 					#if($profile)
-    				<li data="home">
-    					<a href="$base/home" nav="home">主页</a>
-    				</li>
+                        <li data="home">
+                            <a href="$base/home" nav="home">主页</a>
+                        </li>
 					#end
-					
+
 					#foreach($m in $menus)
-					<li>
-    					<a href="$base/${m.url}" nav="${m.name}" target="${m.target}">${m.name}</a>
-    				</li>
+                        <li>
+                            <a href="$base/${m.url}" nav="${m.name}" target="${m.target}">${m.name}</a>
+                        </li>
 					#end
-                    <li><a href="$base/tag/java/">Java</a></li>
-                    <li><a href="$base/tag/Android/">Android</a></li>
-				</ul>
-    			<div id="_search_box" class="search-box navbar-left hidden-xs hidden-sm">
-    				<form class="navbar-form" method="get" action="$base/browse/search">
-    					<input type="text" class="form-control" name="q" placeholder="搜索...">
-						<button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
-    				</form>
-    			</div>
-    			
-    			<ul class="nav navbar-nav navbar-right sign">
-    				#if($profile)
-					<li class="dropdown">
-                        <a href="#" class="publish dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-magic"></i> 发布
-                        </a>
-                    	<ul class="dropdown-menu publishs" role="menu">
-						#foreach($g in $groups)
-                        	<li>
-                                <a href="$base/post/new/${g.key}">
-                                    <i class="${g.icon} icon"></i>
-                                    <span>${g.alias}</span>
-                                </a>
-							</li>
-						#end
-						</ul>
-					</li>
-    				<li class="dropdown">
-    					<a href="#" class="ava dropdown-toggle" data-toggle="dropdown">
-    						<img class="img-circle" src="$base${profile.avatar}">
-    					</a>
-    					<ul class="dropdown-menu" role="menu">
-    		                <li>
-    		                	<a href="$base/account/profile" class="ava">
-									#showAva(${profile.avatar}, "img-circle")
-    		                		<span>#showName(${profile})</span>
-    		                	</a>
-    		               	</li>
-    		                <li class="divider"></li>
-							
-							#if($shiro.hasPermission("admin"))
-								<li><a href="$base/admin">后台管理</a></li>
-							#end
-							
-    		                <li><a href="$base/logout">退出</a></li>
-    		              </ul>
-    				</li>
-    				#else
-    				<li><a href="$base/login" class="signin">登录</a></li>
-                    <li class="hidden-xs"><span class="or">or</span></li>
-                    <li><a href="$base/reg" class="signup">注册</a></li>
-    				#end
-    			</ul>
-    		</div>
-    	</div>
+                    <li><a href="$base/tag/亲子/">亲子</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">IT技术 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="$base/tag/java/">Java</a></li>
+                            <li><a href="$base/tag/Android/">Android</a></li>
+                            <li><a href="$base/tag/ios/">ios</a></li>
+                            <li><a href="$base/tag/Html5/">Html5</a></li>
+                            <li><a href="$base/tag/Object-c/">Object-c</a></li>
+                            <li><a href="$base/tag/swift/">swift</a></li>
+                            <li><a href="$base/tag/MySQL/">MySQL</a></li>
+                            <li><a href="$base/tag/javaweb/">javaweb</a></li>
+                            <li><a href="$base/tag/JavaScript/">JavaScript</a></li>
+                            <li><a href="$base/tag/架构/">架构</a></li>
+                            <li><a href="$base/tag/设计模式/">设计模式</a></li>
+                            <li><a href="$base/tag/ReactNative/">ReactNative</a></li>
+                            <li><a href="$base/tag/JsBridge/">JsBridge</a></li>
+                            <li><a href="$base/tag/业界/">业界</a></li>
+                            <li><a href="$base/tag/程序人生/">程序人生</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="_search_box" class="search-box navbar-left hidden-xs hidden-sm">
+                    <form class="navbar-form" method="get" action="$base/browse/search">
+                        <input type="text" class="form-control" name="q" placeholder="搜索...">
+                        <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right sign">
+					#if($profile)
+                        <li class="dropdown">
+                            <a href="#" class="publish dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-magic"></i> 发布
+                            </a>
+                            <ul class="dropdown-menu publishs" role="menu">
+								#foreach($g in $groups)
+                                    <li>
+                                        <a href="$base/post/new/${g.key}">
+                                            <i class="${g.icon} icon"></i>
+                                            <span>${g.alias}</span>
+                                        </a>
+                                    </li>
+								#end
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="ava dropdown-toggle" data-toggle="dropdown">
+                                <img class="img-circle" src="$base${profile.avatar}">
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="$base/account/profile" class="ava">
+										#showAva(${profile.avatar}, "img-circle")
+                                        <span>#showName(${profile})</span>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+
+								#if($shiro.hasPermission("admin"))
+                                    <li><a href="$base/admin">后台管理</a></li>
+								#end
+
+                                <li><a href="$base/logout">退出</a></li>
+                            </ul>
+                        </li>
+					#else
+                        <li><a href="$base/login" class="signin">登录</a></li>
+                        <li class="hidden-xs"><span class="or">or</span></li>
+                        <li><a href="$base/reg" class="signup">注册</a></li>
+					#end
+                </ul>
+            </div>
+        </div>
     </nav>
 </div>
 <script type="text/javascript">
-$(function () {
-	$('a[nav]').each(function(){  
-        $this = $(this);
-        if($this[0].href == String(window.location)){  
-            $this.closest('li').addClass("active");  
-        }  
+    $(function () {
+        $('a[nav]').each(function(){
+			$this = $(this);
+            if($this[0].href == String(window.location)){
+					$this.closest('li').addClass("active");
+            }
+        });
     });
-});
 </script>
 <!-- Header END -->
