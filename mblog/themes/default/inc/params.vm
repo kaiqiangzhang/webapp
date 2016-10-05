@@ -26,6 +26,10 @@ $!{site_metas}
 <link rel="apple-touch-icon-precomposed" href="$base/assets/images/haowuicon.png"/>
 <link rel="shortcut icon" href="$base/assets/images/haowuicon.png"/>
 
+<link rel="stylesheet" href="$base/assets/vendors/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" type="text/css">
+<script type="text/javascript" src="$base/assets/vendors/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
+<script> SyntaxHighlighter.all(); </script>
+
 <script type="text/javascript">
     var _base_path = '$!{base}';
 
