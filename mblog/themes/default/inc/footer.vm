@@ -43,15 +43,4 @@
 	</div>
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260309756'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260309756%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
     <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript">
-        document.write('<a style="display:none!important" id="tanx-a-mm_117545163_15334598_60112232"></a>');
-        tanx_s = document.createElement("script");
-        tanx_s.type = "text/javascript";
-        tanx_s.charset = "gbk";
-        tanx_s.id = "tanx-s-mm_117545163_15334598_60112232";
-        tanx_s.async = true;
-        tanx_s.src = "http://p.tanx.com/ex?i=mm_117545163_15334598_60112232";
-        tanx_h = document.getElementsByTagName("head")[0];
-        if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
-    </script>
 </footer>
