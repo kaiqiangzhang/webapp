@@ -66,12 +66,6 @@
     </div>
     <img src="http://www.haowuyun.com/pics/weidian.jpg" style="width:238px;height: 312px"  />
 </div>
-<div class="widget-box shadow-box">
-    <div class="title">
-        <h3><i class="fa fa-star"></i> 关注官方新浪微博</h3>
-    </div>
-    <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=5533072738&verifier=addeb0df&dpc=1"></iframe>
-</div>
 
 
 <script type="text/javascript">

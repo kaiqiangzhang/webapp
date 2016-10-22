@@ -4,7 +4,7 @@
 ## - 使用者：视频列表页、发现页、走廊页
 ##
 <!DOCTYPE html>
-<html lang="en-US" xmlns:wb="http://open.weibo.com/wb">
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8"/>
