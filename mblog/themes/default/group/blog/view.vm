@@ -5,12 +5,12 @@
 #set($summary=$!{ret.summary})
 
 <div class="shadow-box">
-	<h1 class="post-title">$!{ret.title}</h1>
-	<div class="clearfix post-other">
+    <h1 class="post-title">$!{ret.title}</h1>
+    <div class="clearfix post-other">
 		<span class="pull-left author">
 			<a class="author-name" href="$base/ta/${ret.author.id}" target="_blank">#showName(${ret.author})</a>
 		</span>
-		<time class="pull-left time">$date.format('yyyy-MM-dd', $ret.created)</time>
+        <time class="pull-left time">$date.format('yyyy-MM-dd', $ret.created)</time>
         <span class="pull-left time">浏览: ${ret.views}</span>
         <ul class="tags">
 			#foreach($tag in $ret.tagsArray)
@@ -20,45 +20,45 @@
 			#end
         </ul>
         <span class="pull-right action-box"></span>
-	</div>
-	<div class="post-frame">
+    </div>
+    <div class="post-frame">
 		#if($ret.albums)
-			<div class="thumbs">
-			#foreach($alb in $ret.albums)
-				<div class="single-post-media">
-					<a title="${ret.title}" href="#resource(${alb.original})">
-						#if($att.store == 1)
-							<img src="$base/assets/images/spinner.gif" data-original="#resource(${alb.original})"/>
-						#else
-							<img src="$base/assets/images/spinner.gif" data-original="#resource(${alb.original})"/>
-						#end
-					</a>
-				</div><!-- .post-thumbnail -->
-			#end
-			</div>
-		#end
-		<div class="post-content">
-			${ret.content}
-            <div>
-                <a href="http://s.click.taobao.com/t?e=m%3D2%26s%3D1qmNe4LaNe4cQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClApH8BGbdpbUQNL%2BT7Bx1dzrVtsfYb%2FOInPRqwN7i%2B49pbjdS9O2v05X%2B35s3sc8tqBmIkXBqRClNTcEU%2BDykfuSM%2BhtH71aX6mMC%2FVYRjeGkg1LZ9gMhib9Lyrb2g0H2G1nQwv%2FsfcJXRKykAtkpb7s%3D">
-					<img src="http://www.haowuyun.com/pics/ads/300-80.jpg" style="width: 300px;height: 80px" alt="广告" />
-				</a>
+            <div class="thumbs">
+				#foreach($alb in $ret.albums)
+                    <div class="single-post-media">
+                        <a title="${ret.title}" href="#resource(${alb.original})">
+							#if($att.store == 1)
+                                <img src="$base/assets/images/spinner.gif" data-original="#resource(${alb.original})"/>
+							#else
+                                <img src="$base/assets/images/spinner.gif" data-original="#resource(${alb.original})"/>
+							#end
+                        </a>
+                    </div><!-- .post-thumbnail -->
+				#end
             </div>
-		</div>
-		<div class="post-footer">
-            <a data-type="19" data-tmpl="950x90" data-tmplid="2824" biz-url="http://haowuyun.com/view/33" biz-text="淘宝购物" biz-imgurl="http://www.haowuyun.com/pics/haowuyunicon.png" data-rd="2" data-style="2" data-border="1" href="#"></a>
+		#end
+        <div class="post-content">
+			${ret.content}
+        </div>
+
+        <div class="post-footer">
             <div class="tip">分享到：</div>
-			<div class="shares">
+            <div class="shares">
                 <!-- Share Button BEGIN -->
 				#parse("/default/inc/share.vm")
                 <!-- Share Button END -->
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- post/end -->
 
 #parse("/default/group/comments.vm")
+<!-- ad slide 2016-08-01 21:35:35-->
+
+<a data-type="13" data-tmpl="350x100" data-tmplid="212" data-rd="2" data-style="2" data-border="1" href="#"></a>
+
+<!-- ad end -->
 <script type="text/javascript">
     (function(win,doc){
         var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
