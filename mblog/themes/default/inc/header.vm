@@ -66,21 +66,32 @@
 					#end
                     <li><a href="$base/tag/亲子/">亲子</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">IT技术 <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">IT技术 <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="$base/tag/java/">Java</a></li>
-                            <li><a href="$base/tag/Android/">Android</a></li>
-                            <li><a href="$base/tag/ios/">ios</a></li>
-                            <li><a href="$base/tag/Html5/">Html5</a></li>
                             <li><a href="$base/tag/Object-c/">Object-c</a></li>
                             <li><a href="$base/tag/swift/">swift</a></li>
-                            <li><a href="$base/tag/MySQL/">MySQL</a></li>
-                            <li><a href="$base/tag/javaweb/">javaweb</a></li>
-                            <li><a href="$base/tag/JavaScript/">JavaScript</a></li>
-                            <li><a href="$base/tag/架构/">架构</a></li>
-                            <li><a href="$base/tag/设计模式/">设计模式</a></li>
+
+                            <li role="presentation" class="divider"></li>
+                            <li><a href="$base/tag/Android/">Android</a></li>
+                            <li><a href="$base/tag/ios/">ios</a></li>
                             <li><a href="$base/tag/ReactNative/">ReactNative</a></li>
                             <li><a href="$base/tag/JsBridge/">JsBridge</a></li>
+
+                            <li role="presentation" class="divider"></li>
+                            <li ><a href="$base/tag/Html5/">Html5</a></li>
+                            <li><a href="$base/tag/JavaScript/">JavaScript</a></li>
+
+                            <li role="presentation" class="divider"></li>
+                            <li><a href="$base/tag/javaweb/">javaweb</a></li>
+                            <li><a href="$base/tag/MySQL/">MySQL</a></li>
+                            <li><a href="$base/tag/bootstrap/">BootStrap</a></li>
+
+                            <li role="presentation" class="divider"></li>
+                            <li><a href="$base/tag/架构/">架构</a></li>
+                            <li><a href="$base/tag/设计模式/">设计模式</a></li>
+
+                            <li role="presentation" class="divider"></li>
                             <li><a href="$base/tag/业界/">业界</a></li>
                             <li><a href="$base/tag/程序人生/">程序人生</a></li>
                         </ul>

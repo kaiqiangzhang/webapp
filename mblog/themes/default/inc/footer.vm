@@ -22,7 +22,7 @@
         </div>
     </div>
 	<div class="container mode-link">
-        <h3 class="t-h3">友情链接</h3>
+        <h3 class="t-h3">友情链接 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-android"></i> <a href="http://www.haowuyun.com/download/android_app.apk">手机客户端下载</a></h3>
         <ul class="list-inline">
 			#foreach($link in $friendLinks)
                 <li>
@@ -37,9 +37,9 @@
 		<a href="http://www.miitbeian.gov.cn/" target="_blank">&nbsp;&nbsp;<img src="http://www.haowuyun.com/pics/beian.png"
                                                                                 style="width: 18px;height: 18px"/>&nbsp;&nbsp;$!{site_icp}</a>
 		</span>
-		<span><a href="http://www.12377.cn/" target="_blank">&nbsp;&nbsp;<img src="http://www.haowuyun.com/pics/jubao2.png"
-                                                                              style="width: 19px;height: 18px"/>&nbsp;&nbsp;中国互联网举报中心</a>
+		<span><a href="http://www.12377.cn/" target="_blank">&nbsp;&nbsp;<img src="http://www.haowuyun.com/pics/jubao2.png" style="width: 19px;height: 18px"/>&nbsp;&nbsp;中国互联网举报中心</a>
 		</span>
 	</div>
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260309756'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260309756%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
 </footer>
