@@ -1,0 +1,56 @@
+##
+## 布局-全屏布局
+## - 布局页设置基本结构, 剩下的全由使用页决定
+## - 使用者：他人主页
+##
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>$!title - $!{site_name}</title>
+	<meta name="keywords" content="LoveInLog,$!{site_keywords}"/>
+	<meta name="description" content="$!{site_description}"/>
+
+	#parse("/default/inc/params.vm")
+    <script type="text/javascript" >
+        function controlHeaderVisibility()
+        {
+            if (mblog.browser.ios || mblog.browser.android) {
+                $("#headerJK").hide();
+                $("#footerJK").hide();
+            }else {
+                $("#headerJK").show();
+                $("#footerJK").show();
+            }
+        }
+        $(document).ready(function(){
+            controlHeaderVisibility();
+        });
+    </script>
+</head>
+<body onload="controlHeaderVisibility()">
+
+<div id="headerJK" class="headerJK" style="display: none;">
+	#parse("/default/inc/header.vm")
+</div>
+
+	<!--.site-main -->
+	<div class="wrap">
+	${screen_content}
+	</div>
+
+<div id="footerJK" class="footerJK" style="display: none;">
+    #parse("/default/inc/footer.vm")
+</div>
+
+	<a href="#" class="site-scroll-top"></a>
+
+	<script type="text/javascript">
+    seajs.use('main', function (main) {
+    	main.init();
+    });
+    </script>
+</body>
+</html>

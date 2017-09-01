@@ -1,0 +1,138 @@
+#set($title="LoveInLog客户端下载")
+<style type="text/css">
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+    .btn:hover,
+    .btn:focus {
+        color: #333333;
+        text-decoration: none;
+    }
+    .btn:active,
+    .btn.active {
+        outline: 0;
+        background-image: none;
+        -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    }
+    .btn.disabled,
+    .btn[disabled],
+    fieldset[disabled] .btn {
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: 0.65;
+        filter: alpha(opacity=65);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .btn-default {
+        color: #333333;
+        background-color: #ffffff;
+        border-color: #cccccc;
+    }
+    .btn-default:hover,
+    .btn-default:focus,
+    .btn-default:active,
+    .btn-default.active,
+    .open > .dropdown-toggle.btn-default {
+        color: #333333;
+        background-color: #e6e6e6;
+        border-color: #adadad;
+    }
+    .btn-default:active,
+    .btn-default.active,
+    .open > .dropdown-toggle.btn-default {
+        background-image: none;
+    }
+    .btn-default.disabled,
+    .btn-default[disabled],
+    fieldset[disabled] .btn-default,
+    .btn-default.disabled:hover,
+    .btn-default[disabled]:hover,
+    fieldset[disabled] .btn-default:hover,
+    .btn-default.disabled:focus,
+    .btn-default[disabled]:focus,
+    fieldset[disabled] .btn-default:focus,
+    .btn-default.disabled:active,
+    .btn-default[disabled]:active,
+    fieldset[disabled] .btn-default:active,
+    .btn-default.disabled.active,
+    .btn-default[disabled].active,
+    fieldset[disabled] .btn-default.active {
+        background-color: #ffffff;
+        border-color: #cccccc;
+    }
+    .btn-default .badge {
+        color: #ffffff;
+        background-color: #333333;
+    }
+	.btn-down-apk {
+        background: url(http://www.haowuyun.com/pics/btn-down-apk.png) no-repeat center;
+        margin-left: 20px;
+        margin: 40px auto 55px;
+    }
+</style>
+<div class="shadow-box">
+	<h1 class="post-title">LoveInLog客户端下载</h1>
+	<div class="clearfix post-other">
+		<span class="pull-left author">
+
+		</span>
+	</div>
+	<div class="post-frame">
+        <div class="post-content">
+
+            <p><strong>LoveInLog 客户端下载</strong><br/></p>
+
+            <div style="float:left">
+                <img src="$base/assets/images/1478928987.png" style="width:200px;height: 200px;"  />
+
+            </div>
+            <div style="float:left">
+                <a class="btn btn-down-apk" href="http://www.haowuyun.com/download/android_app.apk" target="_blank" style="width:150px;height: 150px"></a>
+
+            </div>
+        </div>
+		<div class="post-content">
+
+			<p><strong>首页</strong><br/></p>
+            <p>
+                <img src="http://www.haowuyun.com/pics/Screenshot_2017-01-16-11-35-21.png" style="float: left;width: 300px;height:500px; margin-right: 50px;" />
+                <img src="http://www.haowuyun.com/pics/Screenshot_2017-01-16-08-48-01.png" style="float: left;width: 300px;height: 500px;"/>
+            </p>
+		</div>
+        <div class="post-content">
+            <br/>
+            <p><strong>文章页面</strong></p>
+            <p>
+                <img src="http://www.haowuyun.com/pics/Screenshot_2017-01-16-08-48-24.png" style="float: left;width: 300px;height:500 px;margin-right: 50px;"/>
+                <img src="http://www.haowuyun.com/pics/Screenshot_2017-01-16-08-48-41.png" style="float: left;width: 300px;height: 500px; "/>
+            </p>
+        </div>
+		<div class="post-footer">
+		</div>
+	</div>
+</div>

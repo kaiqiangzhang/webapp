@@ -1,0 +1,66 @@
+<footer>
+    <div class="footer-nav">
+        <div class="container">
+            <ul class="about-ul list-inline clearfix">
+                <li><a href="$base/tag/摄影/">摄影</a></li>
+                <li><a href="$base/tag/内涵/">内涵段子</a></li>
+                <li><a href="$base/tag/八卦/">八卦</a></li>
+                <li><a href="$base/tag/面试/">面试</a></li>
+                <li><a href="$base/tag/视界/">视界</a></li>
+                <li><a href="$base/tag/情感/">情感</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-nav">
+        <div class="container">
+            <ul class="about-ul list-inline clearfix">
+                <li><a href="$base/about">关于我们</a></li>
+                <li><a href="$base/app_download">应用下载</a></li>
+                <li><a href="$base/joinus">联系我们</a></li>
+                <li><a href="$base/faqs">常见问题</a></li>
+            </ul>
+        </div>
+    </div>
+	<div class="container mode-link">
+        <h3 class="t-h3">友情链接 &nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <ul class="list-inline">
+			#foreach($link in $friendLinks)
+                <li>
+                    <a href="${link.url}" target="_blank" title="${link.remark}">${link.siteName}</a>
+                </li>
+			#end
+        </ul>
+    </div>
+	<div class="container copy-right">
+        <span>$!{site_copyright} </span>
+		<span>
+		<a href="http://www.miitbeian.gov.cn/" target="_blank">&nbsp;&nbsp;<img src="http://www.haowuyun.com/pics/beian.png"
+                                                                                style="width: 18px;height: 18px"/>&nbsp;&nbsp;$!{site_icp}</a>
+		</span>
+		<span><a href="http://www.12377.cn/" target="_blank">&nbsp;&nbsp;<img src="http://www.haowuyun.com/pics/jubao2.png" style="width: 19px;height: 18px"/>&nbsp;&nbsp;中国互联网举报中心</a>
+		</span>
+	</div>
+    <!-- cnzz stats -->
+    <script type="text/javascript">
+        var cnzz_s_tag = document.createElement('script');
+        cnzz_s_tag.type = 'text/javascript';
+        cnzz_s_tag.async = true;
+        cnzz_s_tag.charset = 'utf-8';
+        cnzz_s_tag.src = 'https://w.cnzz.com/c.php?id=1260309756&async=1';
+        var root_s = document.getElementsByTagName('script')[0];
+        root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
+    </script>
+##    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260309756'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260309756%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript">
+        document.write('<a style="display:none!important" id="tanx-a-mm_117545163_15334598_60112232"></a>');
+        tanx_s = document.createElement("script");
+        tanx_s.type = "text/javascript";
+        tanx_s.charset = "gbk";
+        tanx_s.id = "tanx-s-mm_117545163_15334598_60112232";
+        tanx_s.async = true;
+        tanx_s.src = "http://p.tanx.com/ex?i=mm_117545163_15334598_60112232";
+        tanx_h = document.getElementsByTagName("head")[0];
+        if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
+    </script>
+</footer>

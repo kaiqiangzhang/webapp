@@ -1,0 +1,67 @@
+#set($layout = "/default/layout/columns_view.vm")
+#set($title=$!{ret.title})
+#set($tags=$!{ret.tags})
+#set($summary=$!{ret.summary})
+
+<div class="shadow-box">
+	<h1 class="post-title">$!{ret.title}</h1>
+	<div class="clearfix post-other">
+		<span class="pull-left author">
+			<a class="author-name" href="$base/ta/${ret.author.id}" target="_blank">#showName(${ret.author})</a>
+		</span>
+		<time class="pull-left time">$date.format('yyyy-MM-dd', $ret.created)</time>
+        <span class="pull-left time">浏览: ${ret.views}</span>
+        <ul class="tags">
+			#foreach($tag in $ret.tagsArray)
+                <li>
+                    <a class="tag tag-sm" href="$base/tag/${tag}/">$tag</a>
+                </li>
+			#end
+        </ul>
+        <span class="pull-right action-box"></span>
+	</div>
+	<div class="post-frame">
+		<div class="post-content">
+			$!{ret.attribute.videoBody}
+			${ret.content}
+            <!--广告begin -->
+            <div>
+                <a href="http://s.click.taobao.com/t?e=m%3D2%26s%3D%2BveGeamtxOAcQipKwQzePCperVdZeJviLKpWJ%2Bin0XJRAdhuF14FMbMK5iCHvsh879%2FTFaMDK6SefepJqT8KPI0U0zjQhT%2BNRAnoroBOY0%2BxN0Y%2Fny7hb7Mkz8kGNV%2Ft7DkHVOQMX2vO54LQ%2FVw1LyEdjkNzlcqgeEV%2BM%2BWE6md1dufwYTTstdu1dWexpjjRxgxdTc00KD8%3D">
+                    <img src="http://www.haowuyun.com/pics/ads/460-186.png" style="width: 460px;height: 186px" alt="亲亲宝贝 你的母婴" />
+                </a>
+            </div>
+            <!-- 广告end -->
+		</div>
+		<div class="post-footer">
+            <div class="tip">分享到：</div>
+			<div class="shares">
+                <!-- Share Button BEGIN -->
+                #parse("/default/inc/share.vm")
+                <!-- Share Button END -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- post/end -->
+
+#parse("/default/group/comments.vm")
+    <!-- guang gao script -->
+<script type="text/javascript">
+    (function(win,doc){
+        var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
+        if (!win.alimamatk_show) {
+            s.charset = "gbk";
+            s.async = true;
+            s.src = "http://a.alimama.cn/tkapi.js";
+            h.insertBefore(s, h.firstChild);
+        };
+        var o = {
+            pid: "mm_117545163_15334598_59050846",/*推广单元ID，用于区分不同的推广渠道*/
+            appkey: "",/*通过TOP平台申请的appkey，设置后引导成交会关联appkey*/
+            unid: "",/*自定义统计字段*/
+            type: "click" /* click 组件的入口标志 （使用click组件必设）*/
+        };
+        win.alimamatk_onload = win.alimamatk_onload || [];
+        win.alimamatk_onload.push(o);
+    })(window,document);
+</script>
